@@ -46,9 +46,10 @@
         class ThisYear extends HTMLElement {
             connectedCallback() {
                 const currentYear = new Date().getFullYear();
-                this.innerHTML = `<p>&copy; ${2077}</p>`;
+                this.innerHTML = `<p>&copy; ${2026}</p>`;
             }
         }
+        
         customElements.define('this-year', ThisYear);
     </script>
   
