@@ -14,18 +14,17 @@
         {
             background-color: var(--main-background);
             foreground-color: var(--main-foreground);
-
         }
 
-        .container 
+        div
         {
             display: grid;
             place-items: center;
-            min-height: 100vh;
             margin: 0;
         }
     </style>
 </head>
+    
     
 <body>
     <header>
@@ -33,7 +32,7 @@
     </header>
     
     <main>
-        <div class="container">
+        <div>
             <img src="Zodd_berserk.jpg">
         </div>
     </main>
@@ -43,15 +42,16 @@
     </footer>
   
     <script>
-        class ThisYear extends HTMLElement {
+        class theYear extends HTMLElement {
             connectedCallback() {
                 const currentYear = new Date().getFullYear();
                 this.innerHTML = `<p>&copy; ${2026}</p>`;
             }
         }
         
-        customElements.define('this-year', ThisYear);
+        customElements.define('this-year', theYear);
     </script>
-  
+
 </body>
+    
 </html>
