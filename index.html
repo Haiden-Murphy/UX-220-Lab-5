@@ -42,8 +42,10 @@
     </footer>
   
     <script>
-        class theYear extends HTMLElement {
-            connectedCallback() {
+        class theYear extends HTMLElement 
+        {
+            connectedCallback() 
+            {
                 const currentYear = new Date().getFullYear();
                 this.innerHTML = `<p>&copy; ${2026}</p>`;
             }
